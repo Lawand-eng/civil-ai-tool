@@ -47,7 +47,7 @@ api_key = st.text_input("کلیل / API Keyی Geminiی خۆت داخڵ بکە (�
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-3.8-flash')
 
     # پاراستنی مێژووی چاتەکە (Chat History)
     if "messages" not in st.session_state:
